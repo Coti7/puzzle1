@@ -2,35 +2,11 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-
-    <style>
-        #container {
-            height: 100000px; 
-            display: grid; 
-            margin: 25px;
-            grid-template-columns: 1fr auto;
-        }
-
-        #container #p1 {
-            align-self: self-end; 
-            text-align: left;
-            color: #fff;
-        }
-
-        #container #p2 {
-            align-self: self-end; 
-            text-align: right;
-            color: #ffffff30;
-        }
-
-        #p2::after{
-            content: "UURBNUo2Y1k=";
-        }
-    </style>
-    </style>
 </head>
 <body>
     <div id="top">
@@ -39,6 +15,25 @@
             <a href="index.html" target="_blank" id="btnMainPage">Main page</a>
         </div>
     </div>
+
+    <div id="captcha">
+        <div id="catpchaTop">
+            验证码
+        </div>
+        <div id="captchaBottom">
+            <div id="imgCaptcha">
+                <img src="https://raw.githubusercontent.com/Coti7/puzzle1/refs/heads/main/.github/gitig.png">
+            </div>
+            <div id="captchaText">
+                <form id="form">
+                    <input type="password" id="captchaInput">
+                    <button type="submit" id="submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
     <div id="container">
         <p id="p1">Herbert Corporation (we still don't have a logo)</p>
         <p id="p2"></p>
